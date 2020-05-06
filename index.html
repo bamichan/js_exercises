@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="サイトをキーワードで説明">
+	<meta name="description" content="どんなサイトかを短い文章で説明">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" media="screen and ( min-width:769px )" href="css/style_pc.css">
+	<link rel="stylesheet" type="text/css" media="screen and ( max-width:768px )" href="css/style_sp.css">
+	<script type="text/javascript" src="./js/jquery-3.5.0.js"></script>
+	<!-- <script type="text/javascri∫pt" src="./js/jquery.fadethis.js"></script> -->
+	<!-- <script type="text/javascript" src="./js/jquery.fadethis.min.js"></script> -->
+	<!-- drawer.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/li∫∫bs/drawer/3.2.2/css/drawer.min.css">
+	<!-- jquery & iScroll -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+	<!-- drawer.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+	<title>月木でわかる HTML5 &amp; CSS3</title>
+</head>
+
+<body class="drawer drawer--right">
+
+	<header role="banner">
+		<button type="button" class="drawer-toggle drawer-hamburger">
+			<span class="sr-only">toggle navigation</span>
+			<span class="drawer-hamburger-icon"></span>
+		</button>
+		<nav class="drawer-nav" role="navigation">
+			<ul class="drawer-menu">
+				<li><a class="drawer-menu-item" id="menu-sec1" href="#sec1">見出しのエリア</a></li>
+				<li><a class="drawer-menu-item" id="menu-sec2" href="#sec2">flexのエリア</a></li>
+				<li><a class="drawer-menu-item" id="menu-sec3" href="#sec3">センタリングエリア</a></li>
+				<li><a class="drawer-menu-item" id="menu-sec4" href="#sec4">制作実績</a></li>
+				<li>
+					<a id="ja" href="#">日本語</a>
+					<a id="en" href="#">English</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main role="main">
+	<article>
+		<section id="sec1">
+			<h1>月木でわかる <br> HTML5 &amp; CSS3</h1>
+		</section>
+
+		
+
+		<section id="sec2">
+			<h1>3つのブロックエリア<br>flexとの上手な付き合い方</h1>
+			<p><button id="addflex_btn">エリア追加</button></p>
+			<p>1~10の整数を入力してください</p>
+			<p><input id="copyflex_form" type="text">
+			<button id="copyflex_btn">個エリア追加</button></p>
+			<p id="attention">1~10の整数を入力してください</p>
+
+			<div class="box flex_area">
+				<!-- 課題１.flex_area_paddingクラス名を追加 -->
+				<!-- 課題3.flex_area_contentクラス名を追加 -->
+				<div class="flex_area_padding flex_area_content">
+					<h2>flexを使って左から詰めていく</h2>
+					<p>ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります
+						ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります
+					</p>
+				</div>
+				<!-- 課題１.flex_area_paddingクラス名を追加 -->
+				<!-- 課題3.flex_area_contentクラス名を追加 -->
+				<div class="flex_area_padding flex_area_content">
+					<h2>flexを使って左から詰めていく</h2>
+					<p>ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります
+						ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります
+					</p>
+				</div>
+				<!-- 課題１.flex_area_paddingクラス名を追加 -->
+				<!-- 課題3.flex_area_contentクラス名を追加 -->
+				<div class="flex_area_padding flex_area_content">
+					<h2>flexを使って左から詰めていく</h2>
+					<p>ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります
+						ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります ここにflexに関してのテキストが入りますここにflexに関してのテキストが入ります
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="sec3">
+			<div class="box">
+				<h1>まずはお聞かせ下さい<br>御社の"中央寄せ"について</h1>
+				<p>PC版では段落を整えるために改行したい。しかしSP版では不用意な改行を入れたくない。そんな時はbrをdisplay:noneすると良いでしょう。</p>
+				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+				<p>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br> テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+				</p>
+				<p>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト、<br> テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ、
+					<br> テキストテキストテキストテキストテキストテキストテキストテキストテキス
+					<br> テキストテキストテキストテキストテキストテキストテキストテキストテキストテキ。
+				</p>
+			</div>
+		</section>
+
+		<section id="sec4">
+			<div class="box port">
+				<h1>制作実績</h1>
+				<button id="bigimg_btn"><p>画像拡大</p></button>
+				<button id="changeimg_btn"><p>画像変更</p></button>
+				<p>ここでもdisplay:flexの練習をしましょうdisplay:flexは様々な並び替えをすることができます。<br> グリッドレイアウトと言われるCSSも最近流行っています。ここではflexを使用します。
+				</p>
+
+				<div class="portfolio slide-left"><!--slideleftはFadeThisプラグインの決まった書き方-->
+					<a href="#"><img src="img/thumb_01.png" alt="あいうえお">
+						<p class="port_title">あいうえお建設様</p>
+					</a>
+					<!--課題4. divにクラス名を追加 flex_p-->
+					<div class="flex_p">
+						<p class="port_margin">ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。
+							ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。
+
+						</p>
+					</div>
+
+				</div>
+
+				<div class="portfolio flex_reverse slide-right">
+					<!--課題4. divにクラス名を追加 flex_p-->
+					<div class="flex_p">
+						<!--課題4. その他の解答pにクラス名を追加 port_margin-->
+						<p class="port_margin">ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。
+							ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。
+
+						</p>
+					</div>
+					<a href="#"><img src="img/thumb_02.png" alt="かきくけこ">
+						<p class="port_title">かきくけこ電気様</p>
+					</a>
+				</div>
+
+				<div class="portfolio slide-left">
+					<a href="#"><img src="img/thumb_03.png" alt="さしすせそ">
+						<p class="port_title">さしすせそ興行様</p>
+					</a>
+					<!--課題4. divにクラス名を追加 flex_p-->
+					<div class="flex_p">
+						<p class="port_margin">ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。
+							ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。ここに制作実績のテキストが入ります。
+
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+		</section>
+		<footer>
+			<p class="copyright">Copyright &copy; DEMO all rights reserved.</p>
+		</footer>
+	</article>
+
+	<!-- 課題7解答 -->
+	<div id="chatWrap">
+		<div id="chatBox"></div>
+		<div class="chatFormBox">
+			<form>
+				<input type="text" id="chatForm" placeholder="メッセージを入力">
+				<button id="addChat">送信する</button>
+			</form>
+		</div>
+	</div>
+	<!-- 課題7解答ここまで -->
+	</main>
+	<script type="text/javascript" src="./js/common.js"></script>
+	∫
+</body>
+
+</html>
